@@ -1,0 +1,28 @@
+{% extends 'principal.html' %}
+
+{% block conteudo %}
+    <div class="row mt-1 p-1 h4-homepage" style="color:#000000;">Perguntas Frequentes - FAQ</div>
+    <div class="row mt-3 p-2">
+        <div class="col border border-dark-subtle">
+            <a href="{{ url_for('criar_faq') }}">
+                <button class="btn btn-dark mt-2 mb-2 w-100 form-control">Criar Nova Faq</button>
+            </a>
+        </div>
+    </div>
+    {% if faqs %}
+        {% for faq in faqs %}
+            <div class="row mt-3 p-2">
+                <div class="col border border-dark-subtle">
+                    <a href="{{ url_for('editar_faq', faq_id=faq.id) }}" style="text-decoration: none"><h3>{{ faq.titulo }}</h3></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p class="p3-homepage">{{ faq.resposta }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="row mt-3 p-2">
+            <div class="col border border-dark-subtle" style="text-align: center;">
+                <p class="p3-homepage m-5">Clique no botão acima para cadastrar uma FAQ!</p>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

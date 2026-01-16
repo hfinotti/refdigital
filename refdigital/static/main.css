@@ -1,0 +1,299 @@
+.formata-card {
+    background-color: #ffffff;
+    display: inline-block;  /*  - block - flex - inline - grid */
+    max-width: 300px;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    text-wrap: wrap; /* balance, pretty, , nowrap */
+}
+
+.tf-10-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 15px; font-color: #000000; line-height: 0.5;}
+.tf-15-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 15px; font-color: #000000; line-height: 0.6;}
+.tf-20-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 20px; font-color: #000000; line-height: 0.7;}
+.tf-25-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 25px; font-color: #000000; line-height: 0.8;}
+.tf-30-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 30px; font-color: #000000; line-height: 0.8;}
+.tf-35-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 35px; font-color: #000000; line-height: 1.1;}
+.tf-45-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 45px; font-color: #000000; line-height: 1.0;}
+.tf-55-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 55px; font-color: #000000; line-height: 1.2;}
+.tf-65-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 65px; font-color: #000000; line-height: 1.2;}
+
+.tf-10-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 10px; font-color: #FFFFFF; line-height: 0.7;}
+.tf-15-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 15px; font-color: #FFFFFF; line-height: 0.8;}
+.tf-20-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 20px; font-color: #FFFFFF; line-height: 0.8;}
+.tf-25-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 25px; font-color: #FFFFFF; line-height: 0.8;}
+.tf-30-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 30px; font-color: #FFFFFF; line-height: 0.8;}
+.tf-35-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 35px; font-color: #FFFFFF; line-height: 1.1;}
+.tf-45-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 45px; font-color: #FFFFFF; line-height: 1.0;}
+.tf-55-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 55px; font-color: #FFFFFF; line-height: 1.2;}
+.tf-65-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 65px; font-color: #FFFFFF; line-height: 1.2;}
+
+.h1-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 90px;
+    line-height: 0.8;
+    color: #ffffff;
+}
+
+.h2-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    line-height: 0.9;
+    color: #ffffff;
+}
+
+.h3-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 0.8;
+    color: #000000;
+}
+
+.h4-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.0;
+    color: #ffffff;
+}
+
+.h5-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 0.9;
+    color: #ffffff;
+}
+
+.bt-contatohome {
+    background-image: url('../static/imagens/fundo_contato_menu.png');
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 170px;
+    height: 61px;
+    padding-top: 15px;
+}
+
+
+.bt-contatohome:hover {
+    background-image: url('../static/imagens/fundo_contato_menu1v.png');
+}
+
+
+.bt-soliciardiagnostico {
+    background-image: url('../static/imagens/fundo_diagnostico1.png');
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 314px;
+    height: 58px;
+    padding-top: 12px;
+}
+
+.bt-soliciardiagnostico:hover {
+    background-image: url('../static/imagens/fundo_diagnostico1v.png');
+}
+
+.p-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000000;
+    white-space: nowrap;
+
+}
+
+.p2-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 0.9;
+}
+
+.p3-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 0.7;
+}
+
+
+.opcao-menu {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.opcao-menu:visited {
+    color: #ffffff;
+}
+
+.opcao-menu:hover {
+    color: #CAFF07;
+}
+
+.botao-volta-topo {
+    text-align: center;
+    width: 115px;
+    height: 20px;
+    background-image: url('../static/imagens/botao_volta_topo.png');
+    background-repeat: no-repeat;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.botao-faleref {
+    text-align: center;
+    width: 342px;
+    height: 77px;
+    background-image: url('../static/imagens/botao_fale_conosco.png');
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #000000;
+}
+
+.div_largura_min {
+    min-width: 266px;
+}
+
+
+.caixa_topico_esquerda {
+    min-width: 40%;
+    min-height: 400px;
+}
+
+
+.caixa_topico_direita {
+    min-width: 40%;
+    min-height: 400px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #C5FF00 #3C4D06; /* #C5FF00, #3C4D06 - #474747 #000000 */
+}
+
+
+.item-servico-direita {
+    background-color: #ffffff;
+    min-height: 200px;
+    max-width: 250px;
+    margin: 5px;
+    padding-top: 25px;
+    padding-right: 15px;
+    text-align: left;
+    border-radius: 20px 150px 20px 20px;  /* top-left | top-right | bottom-right | bottom-left */
+}
+
+
+.item-servico-esquerda {
+    background-color: #ffffff;
+    min-height: 200px;
+    max-width: 250px;
+    margin: 5px;
+    padding-top: 25px;
+    padding-left: 15px;
+    text-align: right;
+    border-radius: 150px 20px 20px 20px;  /* top-left | top-right | bottom-right | bottom-left */
+}
+
+
+.item-servico-central {
+    background-color: #ffffff;
+    min-height: 200px;
+    max-width: 250px;
+    margin: 5px;
+    padding-top: 25px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;  /* top-left | top-right | bottom-right | bottom-left */
+}
+
+.item-cliente {
+    border-radius: 20px;
+    background-color:#272727;
+    min-height: 250px;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+
+.wrap_colunas {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    /*white-space: nowrap;*/
+    scrollbar-width: thin;
+    scrollbar-color: #474747 #000000;
+}
+
+
+/*---------------------------------------------*/
+/* CLASSE PARA O BOTÃO VOLTAR AO TOPO HOMEPAGE */
+/*---------------------------------------------*/
+#btnVoltarTopo {
+    display: none; /* Esconde o botão por padrão */
+    position: fixed; /* Posição fixa na tela */
+    bottom: 10px; /* Distância do fundo da tela */
+    left: 10px; /* Distância da direita da tela */
+    z-index: 200; /* Garante que o botão fique acima de outros elementos */
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno ao clicar */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 25px; /* Cantos arredondados */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: opacity 0.3s; /* Transição suave para aparecer/desaparecer */
+    opacity: 0.7;
+}
+
+#btnVoltarTopo:hover {
+    background-color: #CAFF07; /* Cor de fundo ao passar o mouse */
+}
+
+
+/*------------------------------------------*/
+/* CLASSES DA ANIMAÇÃO DA SEÇÃO FAQ NA HOME */
+/*------------------------------------------*/
+@view-transition {
+    navigation: auto;
+}
+
+.tw-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+}
+
+.tw-faq-answer.open {
+  max-height: 500px;
+}
+
+.tw-faq-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tw-faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.tw-faq-item {
+  transition: all 0.3s ease;
+}
+
+.tw-faq-item:hover {
+  transform: translateX(4px);
+}
+
+.tw-faq-item.active {
+  background: #1a1a1a;
+}
+
+
+
+

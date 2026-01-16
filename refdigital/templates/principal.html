@@ -1,0 +1,31 @@
+{% extends 'admin.html' %}
+
+{% block body %}
+    <div class="container">
+        <img src="{{ url_for('static', filename='imagens/r_preto.png') }}" height="72" width="112" class="mt-2 rounded mx-auto d-block"/></center>
+        <h3 class="h3-homepage" style="text-align: center; align-itens: middle;">Área de Administração</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div  class="list-group dark">
+                    <a href="#" class="list-group-item list-group-item-action disabled" style="background-color: #000000; color: #ffffff">Cadastros</a>
+                    <a href="{{ url_for('cliente') }}" class="list-group-item list-group-item-action">Clientes</a>
+                    <a href="{{ url_for('faq') }}" class="list-group-item list-group-item-action">Faq</a>
+                    <a href="{{ url_for('resultado') }}" class="list-group-item list-group-item-action">Resultados</a>
+                    <a href="{{ url_for('servico') }}" class="list-group-item list-group-item-action">Serviços</a>
+                    <a href="{{ url_for('logout') }}" class="list-group-item list-group-item-action">Sair</a>
+                </div>
+            </div>
+            <div class="col-9">
+               {% block conteudo %}
+
+                {% endblock %}
+
+                {% block formulario %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

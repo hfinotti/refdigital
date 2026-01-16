@@ -1,0 +1,15 @@
+@font-face { /* Webfont: Monda-Regular */
+    font-family: 'Monda';
+    src: url('../static/fonts/Monda.eot'); /* IE9 Compat Modes */
+    src: url('../static/fonts/Monda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../static/fonts/Monda.woff') format('woff'), /* Modern Browsers */
+         url('../static/fonts/Monda.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.body {
+    font-family: 'Monda';
+}
+

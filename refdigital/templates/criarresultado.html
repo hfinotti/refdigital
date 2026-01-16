@@ -1,0 +1,122 @@
+{% extends 'principal.html' %}
+
+{% block formulario %}
+    <div class="container">
+        <div class="row mt-3 p-2">
+            <div class="col">
+                <form method="POST" action="" class="border border-dark-subtle m-3 p-3">
+                    {{ form.csrf_token }}
+                    <legend>Criar Card de Resultado</legend>
+                    <fieldset>
+                        <div class="form-group m-1">
+                            {{ form.titulo.label(class='form-control-label') }}
+                            {% if form.titulo.errors %}
+                                {{ form.titulo(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.titulo.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.titulo(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.texto_titulo.label(class='form-control-label') }}
+                            {% if form.texto_titulo.errors %}
+                                {{ form.texto_titulo(class='form-control is-invalid r-5') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.texto_titulo.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.texto_titulo(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.subtitulo1.label(class='form-control-label') }}
+                            {% if form.subtitulo1.errors %}
+                                {{ form.subtitulo1(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.subtitulo1.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.subtitulo1(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.texto_subt1.label(class='form-control-label') }}
+                            {% if form.texto_subt1.errors %}
+                                {{ form.texto_subt1(class='form-control is-invalid r-5') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.texto_subt1.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.texto_subt1(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.subtitulo2.label(class='form-control-label') }}
+                            {% if form.subtitulo2.errors %}
+                                {{ form.subtitulo2(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.subtitulo2.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.subtitulo2(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.texto_subt2.label(class='form-control-label') }}
+                            {% if form.texto_subt2.errors %}
+                                {{ form.texto_subt2(class='form-control is-invalid r-5') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.texto_subt2.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.texto_subt2(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.subtitulo3.label(class='form-control-label') }}
+                            {% if form.subtitulo3.errors %}
+                                {{ form.subtitulo3(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.subtitulo3.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.subtitulo3(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.texto_subt3.label(class='form-control-label') }}
+                            {% if form.texto_subt3.errors %}
+                                {{ form.texto_subt3(class='form-control is-invalid r-5') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.texto_subt3.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.texto_subt3(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    {{ form.botao_criarresultado(class='btn btn-dark mt-2 w-100') }}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

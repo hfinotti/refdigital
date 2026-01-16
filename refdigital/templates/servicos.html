@@ -1,0 +1,43 @@
+
+    <div id="servicos" class="container mt-5 mb-5 text-center">
+        <div class="row justify-content-center">
+            <h1 class="m-3 h2-homepage" style="text-align: center;">Serviços</h1>
+            <h5 class="m-2 h5-homepage" style="text-align: center; letter-spacing: 10px;">REF. DGTL</h5>
+            <h1 class="m-3 h2-homepage" style="text-align: center;">Somos a próxima geração<br>de estratégia digital.</h1>
+        </div>
+        <div class="row justify-content-center">
+        {% if servicos %}
+            {% for servico in servicos %}
+                {% if loop.index == 1 %}
+                    <div class="col-sm-3 item-servico-esquerda">
+                {% elif loop.index == 2 %}
+                    <div class="col-sm-3 item-servico-central">
+                {% elif loop.index == 3 %}
+                    <div class="col-sm-3 item-servico-central">
+                {% elif loop.index == 4 %}
+                    <div class="col-sm-3 item-servico-direita">
+                {% endif %}
+                    <h3 class="h3-homepage">{{ servico.servico }}</h3>
+                    <p class="p2-homepage">{{ servico.descricao }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-sm-3 item-servico-esquerda">
+                <h3 class="h3-homepage">Social &<br>Conteúdo</h3>
+                <p class="p2-homepage">CONTEÚDO ESTRATÉGICO, SOCIAL MEDIA, NARRATIVA DE MARCA E PRESENÇA DIGITAL COM CONSISTENCIA E PROPÓSITO.</p>
+            </div>
+            <div class="col-sm-3 item-servico-central">
+                <h3 class="h3-homepage">Estratégia &<br>Branding</h3>
+                 <p class="p2-homepage">POSICIONAMENTO DE MARCA, IDENTIDADE VISUAL E DIREÇÃO CRIATIVA, PENSADOS PARA DIFERENCIAÇÃO REAL.</p>
+           </div>
+            <div class="col-sm-3 item-servico-central">
+                <h3 class="h3-homepage">Performance<br>& Dados</h3>
+                <p class="p2-homepage">TRÁFEGO PAGO, MÉTRICAS, RELATÓRIOS E DECISÕES BASEADAS EM DADOS PARA ESCALAR RESULTADOS.</p>
+            </div>
+            <div class="col-sm-3 item-servico-direita">
+                <h3 class="h3-homepage">Crescimento<br>Digital</h3>
+                <p class="p2-homepage">PLANEJAMENTO E OTIMIZAÇÕES FOCADAS EM PERFORMANCE, AUTORIDADE E CONVERSÃO.</p>
+            </div>
+        {% endif %}
+        </div>
+    </div>

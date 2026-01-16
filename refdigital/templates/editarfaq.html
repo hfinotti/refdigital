@@ -1,0 +1,65 @@
+{% extends 'principal.html' %}
+
+{% block formulario %}
+    <div class="container">
+        <div class="row mt-3 p-2">
+            <div class="col">
+                <form method="POST" action="" class="border border border-dark-subtle m-3 p-3">
+                    {{ form.csrf_token }}
+                    <legend>Editar FAQ</legend>
+                    <fieldset>
+                        <div class="form-group m-1">
+                            {{ form.titulo.label(class='form-control-label') }}
+                            {% if form.titulo.errors %}
+                                {{ form.titulo(class='form-control is-invalid') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.titulo.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.titulo(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form.resposta.label(class='form-control-label') }}
+                            {% if form.resposta.errors %}
+                                {{ form.resposta(class='form-control is-invalid r-5') }}
+                                <div class="invalid-feedback">
+                                {% for erro in form.resposta.errors %}
+                                    {{ erro }}
+                                {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.resposta(class='form-control border border-dark-subtle') }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    {{ form.botao_editarfaq(class='btn btn-dark mt-2 w-100') }}
+                    <a href="#" class='btn btn-danger mt-3 w-100' data-bs-toggle="modal" data-bs-target="#excluirfaq">Excluir Faq</a><br>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="excluirfaq" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Excluir FAQ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Você deseja realmente excluir esta FAQ?<br>Esta ação não poderá ser desfeita.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form method="POST" action="{{ url_for('excluir_faq', faq_id=faq_id) }}">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

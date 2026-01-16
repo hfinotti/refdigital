@@ -1,0 +1,30 @@
+    <div id="faqs" class="container mt-5 div_tamanho_min">
+        <div class="row m-3 mt-4">
+            <div class="div_largura_min">
+                <h1 class="m-3 h2-homepage" style="text-align: center;">FAQ - Perguntas Frequentes</h1>
+            </div>
+        </div>
+        {% for faq in faqs %}
+        <div class="tw-max-w-3xl mt-2 tw-mx-auto tw-space-y-3">
+            <div class="tw-faq-item tw-rounded-xl tw-cursor-pointer" style="border: 1px solid rgba(255, 255, 255, 0.1);" onclick="toggleFaq(this)">
+                <div class="tw-flex tw-items-center tw-justify-between tw-p-6">
+                    <h3 class="h4-homepage tw-pr-4" style="color: #ffffff;">{{ faq.titulo }}</h3>
+                    <div class="tw-faq-icon tw-flex-shrink-0 tw-w-8 tw-h-8 tw-rounded-full tw-flex tw-items-center tw-justify-center" style="background: #c6ff00;">
+                        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="#161616" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" /> <line x1="5" y1="12" x2="19" y2="12" /></svg>
+                    </div>
+                </div>
+                <div class="tw-faq-answer tw-px-6">
+                    <p class="h5-homepage" style="color: rgba(255, 255, 255, 0.8); font-size: 20px; line-height: 1.0;">{{ faq.resposta }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="tw-max-w-3xl tw-mx-auto tw-mt-16 tw-text-center tw-p-8 tw-rounded-2xl" style="background: linear-gradient(135deg, rgba(198, 255, 0, 0.1) 0%, rgba(198, 255, 0, 0.05) 100%); border: 1px solid rgba(198, 255, 0, 0.2);">
+            <p class="tw-text-lg tw-mb-4 h4-homepage" style="color: rgba(255, 255, 255, 0.8);">Não encontrou o que procurava?</p>
+            <button class="tw-inline-flex tw-items-center tw-gap-2 tw-px-6 tw-py-3 tw-rounded-full tw-font-semibold tw-transition-all tw-hover:scale-105" style="background: #c6ff00; color: #161616;">
+                <span class="h5-homepage" style="color: #000000">Fale com a Ref.</span>
+                <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12" /> <polyline points="12 5 19 12 12 19" /></svg>
+            </button>
+        </div>
+    </div>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ref.Digital - Área de Administração</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <link href="{{ url_for('static', filename='Monda.css') }}" rel="stylesheet" type="text/css" media="screen" />
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css" />
+
+        {% block head %}
+        {% endblock %}
+
+    </head>
+    <body>
+
+        <!-- VERIFICA AS MENSAGENS DO SISTEMA E PRINTA ELAS NA TELA -->
+        <div class="container">
+            {% with mensagens = get_flashed_messages(with_categories=True) %}
+                {% if mensagens %}
+                    {% for categoria, mensagem in mensagens %}
+                        <div class="alert {{ categoria }}">
+                            {{ mensagem }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        {% block body %}
+
+            {% block formulario %}
+                <div class="row m-3">
+                    <div class="col-md-6 offset-md-3">
+                        <center><img src="{{ url_for('static', filename='imagens/r_preto.png') }}" height="72" width="112" /></center><br>
+                        <h3 class="h3-homepage" style="text-align: center;">Área de Administração</h3>
+                        <form method="post" action="" class="border m-2 p-3">
+                            {{ form_login.csrf_token }}
+                            <legend>Faça o Login</legend>
+                            <fieldset>
+                                <div class="form-group m-1">
+                                    {{ form_login.email.label(class='form-control-label') }}
+                                    {{ form_login.email(class='form-control') }}
+                                    {% if form_login.email.errors %}
+                                        {% for erro in form_login.email.errors %}
+                                            <span class="text-danger">{{ erro }}</span><br>
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+                                <div class="form-group m-1">
+                                    {{ form_login.senha.label(class='form-control-label') }}
+                                    {{ form_login.senha(class='form-control') }}
+                                    {% if form_login.senha.errors %}
+                                        {% for erro in form_login.senha.errors %}
+                                            <span class="text-danger">{{ erro }}</span><br>
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+                                <div class="form-group m-1">
+                                    {{ form_login.manter_login.label(class='form-control-label') }}
+                                    {{ form_login.manter_login(class='form-check-input') }}
+                                </div>
+                                <div class="form-group m-1">
+                                    {{ form_login.botao_login(class='btn btn-dark me-3 form-control') }}
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="row m-5 mt-0 content-center">
+                    <div class="col-md-6 offset-md-3 border">
+                        <div class="p-3">
+                            <a href="{{ url_for('criarconta') }}">
+                                <button class="btn btn-dark mt-3 form-control">Criar Conta</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+        {% endblock %}
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

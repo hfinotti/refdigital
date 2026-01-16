@@ -1,0 +1,55 @@
+{% extends 'admin.html' %}
+
+{% block formulario %}
+        <div class="row m-5">
+            <div class="col-md-6 offset-md-3">
+                <center><img src="{{ url_for('static', filename='imagens/r_preto.png') }}" height="72" width="112" /></center><br>
+                <h3 class="h3-homepage" style="text-align: center;">Área de Administração</h3>
+                <form method="post" action="" class="border m-2 p-3">
+                    {{ form_criarconta.csrf_token }}
+                    <legend>Criar Conta</legend>
+                    <fieldset>
+                        <div class="form-group m-1">
+                            {{ form_criarconta.nome.label(class='form-control-label') }}
+                            {{ form_criarconta.nome(class='form-control') }}
+                            {% if form_criarconta.nome.errors %}
+                                {% for erro in form_criarconta.nome.errors %}
+                                    <span class="text-danger">{{ erro }}</span><br>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form_criarconta.email.label(class='form-control-label') }}
+                            {{ form_criarconta.email(class='form-control') }}
+                            {% if form_criarconta.email.errors %}
+                                {% for erro in form_criarconta.email.errors %}
+                                    <span class="text-danger">{{ erro }}</span><br>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form_criarconta.senha.label(class='form-control-label') }}
+                            {{ form_criarconta.senha(class='form-control') }}
+                            {% if form_criarconta.senha.errors %}
+                                {% for erro in form_criarconta.senha.errors %}
+                                    <span class="text-danger">{{ erro }}</span><br>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="form-group m-1">
+                            {{ form_criarconta.confirma_senha.label(class='form-control-label') }}
+                            {{ form_criarconta.confirma_senha(class='form-control') }}
+                            {% if form_criarconta.confirma_senha.errors %}
+                                {% for erro in form_criarconta.confirma_senha.errors %}
+                                    <span class="text-danger">{{ erro }}</span><br>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="form-group mt-1">
+                            {{ form_criarconta.botao_criarconta(class='btn btn-dark mt-2 me-3 form-control') }}
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+{% endblock %}
