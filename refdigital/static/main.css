@@ -181,7 +181,7 @@
     padding-top: 25px;
     padding-right: 15px;
     text-align: left;
-    border-radius: 20px 150px 20px 20px;  /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 20px 20px 150px 20px;  /* top-left | top-right | bottom-right | bottom-left */
 }
 
 
