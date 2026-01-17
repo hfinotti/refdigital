@@ -14,6 +14,7 @@
 .tf-25-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 25px; font-color: #000000; line-height: 0.8;}
 .tf-30-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 30px; font-color: #000000; line-height: 0.8;}
 .tf-35-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 35px; font-color: #000000; line-height: 1.1;}
+.tf-40-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 40px; font-color: #000000; line-height: 1.0;}
 .tf-45-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 45px; font-color: #000000; line-height: 1.0;}
 .tf-55-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 55px; font-color: #000000; line-height: 1.2;}
 .tf-65-p {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 65px; font-color: #000000; line-height: 1.2;}
@@ -24,13 +25,14 @@
 .tf-25-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 25px; font-color: #FFFFFF; line-height: 0.8;}
 .tf-30-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 30px; font-color: #FFFFFF; line-height: 0.8;}
 .tf-35-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 35px; font-color: #FFFFFF; line-height: 1.1;}
+.tf-40-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 40px; font-color: #FFFFFF; line-height: 1.0;}
 .tf-45-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 45px; font-color: #FFFFFF; line-height: 1.0;}
 .tf-55-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 55px; font-color: #FFFFFF; line-height: 1.2;}
 .tf-65-b {font-family: "Monda", Helvetica, Arial, sans-serif; font-size: 65px; font-color: #FFFFFF; line-height: 1.2;}
 
 .h1-homepage {
     font-family: "Monda", Helvetica, Arial, sans-serif;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 0.8;
     color: #ffffff;
 }
@@ -153,6 +155,7 @@
 }
 
 .div_largura_min {
+    max-width: 98%;
     min-width: 266px;
 }
 
@@ -164,6 +167,7 @@
 
 
 .caixa_topico_direita {
+    max-width: 98%;
     min-width: 40%;
     min-height: 400px;
     overflow-x: auto;

@@ -1,33 +1,33 @@
 
-    <nav class="navbar navbar-expand-lg" style="background: #000000">
-      <div class="container-fluid container">
-        <a class="navbar-brand" href="{{ url_for('home') }}"><img src="{{ logo }}" height="41" width="64"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-            <li class="nav-item p-1 ms-5 me-4">
-              <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="{{ url_for('home') }}">Início</a>
-            </li>
-            <li class="nav-item p-1 me-4">
-              <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#resultados">Resultados</a>
-            </li>
-            <li class="nav-item p-1 me-4">
-              <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#servicos">Servicos</a>
-            </li>
-            <li class="nav-item p-1 me-4">
-              <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#clientes">Clientes</a>
-            </li>
-            <li class="nav-item p-1 me-4">
-              <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#faqs">FAQ</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav md-auto mb-1 mb-lg-0 d-flex">
-            <li class="nav-item pt-1">
-                <a class="nav-link active bt-contatohome tf-20-p pt-3" aria-current="page" href="#contatos"><img src="{{ url_for('static', filename='imagens/contato.png') }}" height="20" width="88">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='imagens/telefone.png') }}" class="mt-1" height="20" width="20">&nbsp;</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="{{ url_for('home') }}"><img src="{{ logo }}" height="41" width="64"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                    <li class="nav-item p-1 ms-5 me-4">
+                        <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="{{ url_for('home') }}">Início</a>
+                    </li>
+                    <li class="nav-item p-1 me-4">
+                        <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#resultados">Resultados</a>
+                    </li>
+                    <li class="nav-item p-1 me-4">
+                        <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#servicos">Servicos</a>
+                    </li>
+                    <li class="nav-item p-1 me-4">
+                        <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#clientes">Clientes</a>
+                    </li>
+                    <li class="nav-item p-1 me-4">
+                        <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#faqs">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav md-auto mb-1 mb-lg-0 d-flex">
+                    <li class="nav-item pt-1">
+                        <a class="nav-link active bt-contatohome tf-20-p pt-3" aria-current="page" href="#contatos"><img src="{{ url_for('static', filename='imagens/contato.png') }}" height="20" width="88">&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='imagens/telefone.png') }}" class="mt-1" height="20" width="20">&nbsp;</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>

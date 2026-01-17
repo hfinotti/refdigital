@@ -178,7 +178,7 @@ def salvar_imagem(imagem):
     codigo = secrets.token_hex(8)
     nome, extensao = os.path.splitext(imagem.filename)
     nome_arquivo = nome + codigo + extensao
-    caminho_completo = os.path.join(app.root_path, 'static\\imagens_cliente', nome_arquivo)
+    caminho_completo = os.path.join(app.root_path, r'static\imagens_cliente', nome_arquivo)
     tamanho = (200, 200)
     imagem_reduzida = Image.open(imagem)
     imagem_reduzida.thumbnail(tamanho)
@@ -227,6 +227,10 @@ def editar_cliente(cliente_id):
             cliente.empresa = form.empresa.data
             cliente.nome = form.nome.data
             cliente.cargo = form.cargo.data
+            if cliente.logo != "default.png":
+                caminho_imagem = os.path.join(app.root_path.strip(), r'static\imagens_cliente', cliente.logo)
+                if os.path.exists(caminho_imagem):
+                    os.remove(caminho_imagem)
             if form.logo.data:
                 cliente.logo = salvar_imagem(form.logo.data)
             database.session.commit()
@@ -243,7 +247,7 @@ def excluir_cliente(cliente_id):
     cliente = Cliente.query.get(cliente_id)
     if cliente:
         if cliente.logo != "default.png":
-            caminho_imagem = os.path.join(app.root_path, 'static\\imagens_cliente', cliente.logo)
+            caminho_imagem = os.path.join(app.root_path.strip(), r'static\imagens_cliente', cliente.logo)
             if os.path.exists(caminho_imagem):
                 os.remove(caminho_imagem)
         database.session.delete(cliente)
