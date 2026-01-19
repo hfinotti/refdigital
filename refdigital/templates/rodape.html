@@ -1,13 +1,20 @@
-    <div id="rodape" class="container-fluid" style="height: 70px; background-image: url({{ url_for('static', filename='imagens/fundo_barra_contato.png') }});">
+
+    <div id="rodape" class="container-fluid" style="height: 100px; background-image: url({{ url_for('static', filename='imagens/fundo_barra_rodape.png') }});">
         <div class="row">
-            <div class="col col4">
-                <p class="pt-4 px-3 p2-homepage" style="text-align: left; color: #ffffff;">© Ref.Digital - Todos os Direitos Reservados</p>
+            <div class="col-sm-4">
+                <p class="pt-2 px-3 p3-homepage" style="text-align: center; color: #ffffff;">© Ref.Digital - Todos os Direitos Reservados</p>
+                <p class="pt-2 px-3 p3-homepage" style="text-align: center; color: #ffffff;">contato@refdigital.com.br</p>
             </div>
-            <div class="col col4">
-                <p class="pt-4 px-3 p2-homepage" style="text-align: center; color: #ffffff;">Estratégia • Branding • Performance</p>
+            <div class="col-sm-4">
+                <p class="pt-4 px-3 p3-homepage" style="text-align: center; color: #ffffff;">Estratégia • Branding • Performance</p>
             </div>
-            <div class="col col4">
-                <p class="pt-4 px-3 p2-homepage" style="text-align: right; color: #ffffff;">contato@refdigital.com.br</p>
+            <div class="col-sm-4">
+                <p class="pt-1 px-3 p3-homepage" style="text-align: center; color: #ffffff;">
+                    <a href=""><img src="{{ url_for('static', filename='imagens/bt_whatsapp.png') }}" height="60" width="60"/></a>
+                    <a href="https://www.instagram.com/refdigital"><img src="{{ url_for('static', filename='imagens/bt_instagram.png') }}" height="60" width="60"/></a>
+                    <a href="http://wwww.linkedin.com/refdigital"><img src="{{ url_for('static', filename='imagens/bt_linkedin.png') }}" height="60" width="60"/></a>
+                </p>
+
             </div>
         </div>
     </div>

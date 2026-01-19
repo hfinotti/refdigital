@@ -65,6 +65,40 @@
     color: #ffffff;
 }
 
+.p-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.0;
+
+}
+
+.p2-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 0.9;
+}
+
+.p3-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 0.9;
+}
+
+.p4-homepage {
+    font-family: "Monda", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 0.7;
+}
+
+
 .bt-contatohome {
     background-image: url('../static/imagens/fundo_contato_menu.png');
     display: inline-block;
@@ -94,32 +128,6 @@
 .bt-soliciardiagnostico:hover {
     background-image: url('../static/imagens/fundo_diagnostico1v.png');
 }
-
-.p-homepage {
-    font-family: "Monda", Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    color: #000000;
-    white-space: nowrap;
-
-}
-
-.p2-homepage {
-    font-family: "Monda", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: #000000;
-    line-height: 0.9;
-}
-
-.p3-homepage {
-    font-family: "Monda", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: #000000;
-    line-height: 0.7;
-}
-
 
 .opcao-menu {
     color: #ffffff;
