@@ -100,18 +100,20 @@
 
 
 .bt-contatohome {
-    background-image: url('../static/imagens/fundo_contato_menu.png');
-    display: inline-block;
-    vertical-align: middle;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
     text-align: center;
-    width: 170px;
-    height: 61px;
+    border-radius: 30px 30px 30px 30px;  /* top-left | top-right | bottom-right | bottom-left */
+    height: 50px;
+    width: 160px;
     padding-top: 15px;
+    text-align: center;
+
 }
 
-
 .bt-contatohome:hover {
-    background-image: url('../static/imagens/fundo_contato_menu1v.png');
+    background-color: #C5FF00;
 }
 
 
@@ -138,8 +140,8 @@
     text-align: center;
     border-radius: 30px 30px 30px 30px;  /* top-left | top-right | bottom-right | bottom-left */
     height: 60px;
-    width: 350px;
-    padding-top: 10px;
+    width: 300px;
+    padding-top: 12px;
 }
 
 
@@ -157,7 +159,6 @@
     width: 200px;
     padding-top: 8px;
 }
-
 
 .bt_falecomaref_faq:hover {
     background-color: #C5FF00;
