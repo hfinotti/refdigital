@@ -92,7 +92,7 @@
 
 .p4-homepage {
     font-family: "Monda", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: normal;
     color: #000000;
     line-height: 0.7;
@@ -116,18 +116,53 @@
 
 
 .bt-soliciardiagnostico {
-    background-image: url('../static/imagens/fundo_diagnostico1.png');
-    display: inline-block;
-    vertical-align: middle;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
     text-align: center;
-    width: 314px;
-    height: 58px;
-    padding-top: 12px;
+    border-radius: 30px 30px 30px 30px;  /* top-left | top-right | bottom-right | bottom-left */
+    height: 60px;
+    width: 350px;
+    padding-top: 20px;
+
 }
 
 .bt-soliciardiagnostico:hover {
-    background-image: url('../static/imagens/fundo_diagnostico1v.png');
+    background-color: #C5FF00;
 }
+
+.bt_falecomaref {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;  /* top-left | top-right | bottom-right | bottom-left */
+    height: 60px;
+    width: 350px;
+    padding-top: 10px;
+}
+
+
+.bt_falecomaref:hover {
+    background-color: #C5FF00;
+}
+
+.bt_falecomaref_faq {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;  /* top-left | top-right | bottom-right | bottom-left */
+    height: 40px;
+    width: 200px;
+    padding-top: 8px;
+}
+
+
+.bt_falecomaref_faq:hover {
+    background-color: #C5FF00;
+}
+
 
 .opcao-menu {
     color: #ffffff;
@@ -152,7 +187,7 @@
     opacity: 0.5;
 }
 
-.botao-faleref {
+/*.botao-faleref {
     text-align: center;
     width: 342px;
     height: 77px;
@@ -160,7 +195,7 @@
     background-repeat: no-repeat;
     text-decoration: none;
     color: #000000;
-}
+}*/
 
 .div_largura_min {
     max-width: 98%;

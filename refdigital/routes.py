@@ -15,7 +15,10 @@ def home():
     resultados = Resultado.query.all()
     clientes =  Cliente.query.all()
     servicos =  Servico.query.order_by(Servico.id.desc()).limit(4).all()
-    return render_template('home.html', logo=logo, font=font, faqs=faqs, resultados=resultados, clientes=clientes, servicos=servicos)
+    number = "5534991059999"
+    message = "Olá! Gostaria de mais informações sobre seus serviços."
+    whatsapp_link = f"https://wa.me/{number}?text={message.replace(' ', '%20')}"
+    return render_template('home.html', logo=logo, font=font, faqs=faqs, resultados=resultados, clientes=clientes, servicos=servicos, whatsapp_link=whatsapp_link)
 
 
 @app.route("/admin", methods=['GET', 'POST'])
