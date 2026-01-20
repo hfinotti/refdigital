@@ -5,7 +5,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
                     <li class="nav-item p-1 me-4">
                         <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="{{ url_for('home') }}">Início</a>
@@ -23,7 +23,7 @@
                         <a class="nav-link opcao-menu tf-20-b" aria-current="page" href="#faqs">FAQ</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav md-auto mb-1 mb-lg-0 d-flex">
+                <ul class="navbar-nav mx-auto mb-1 mb-lg-0 d-flex">
                     <li class="nav-item pt-1 justify-content-center">
                         <a class="nav-link active bt-contatohome tf-20-p ps-1 pe-1 pt-1" aria-current="page" href="{{ whatsapp_link }}">&nbsp;&nbsp;<img src="{{ url_for('static', filename='imagens/contato.png') }}" height="20" width="88">&nbsp;&nbsp;<img src="{{ url_for('static', filename='imagens/wpp.png') }}" width="40" height="40">&nbsp;</a>
                     </li>

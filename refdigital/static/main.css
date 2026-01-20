@@ -188,15 +188,6 @@
     opacity: 0.5;
 }
 
-/*.botao-faleref {
-    text-align: center;
-    width: 342px;
-    height: 77px;
-    background-image: url('../static/imagens/botao_fale_conosco.png');
-    background-repeat: no-repeat;
-    text-decoration: none;
-    color: #000000;
-}*/
 
 .div_largura_min {
     max-width: 98%;
