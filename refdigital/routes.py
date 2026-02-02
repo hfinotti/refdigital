@@ -15,8 +15,8 @@ def home():
     resultados = Resultado.query.all()
     clientes =  Cliente.query.all()
     servicos =  Servico.query.order_by(Servico.id.desc()).limit(4).all()
-    number = "5534991059999"
-    message = "Olá! Gostaria de mais informações sobre seus serviços."
+    number = "553432364721"
+    message = "Olá! Gostaria de solititar um diagnóstico e mais informações sobre seus serviços."
     whatsapp_link = f"https://wa.me/{number}?text={message.replace(' ', '%20')}"
     instagra_link = "https://www.instagram.com/ref.dgtl"
     return render_template('home.html', logo=logo, font=font, faqs=faqs, resultados=resultados, clientes=clientes, servicos=servicos, whatsapp_link=whatsapp_link, instagra_link=instagra_link)
